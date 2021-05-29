@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Top 10 Fastest Athletes</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/3da1a747b2.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <h1>Top 10 Fastest Athletes</h1>
+    <p>Choose an event then drag and drop the athletes into the correct order</p>
+
+    <select name="event" id="events">
+      <option value="m100">Men's 100m</option>
+      <option value="m200">Men's 200m</option>
+      <option value="m400">Men's 400m</option>
+      <option value="m800">Men's 800m</option>
+      <option value="w100">Women's 100m</option>
+      <option value="w200">Women's 200m</option>
+      <option value="w400">Women's 400m</option>
+      <option value="w800">Women's 800m</option>
+    </select>
+    <button id="select-event">Select Event</button>
+
+    <ul class="draggable-list" id="draggable-list"></ul>
+    <button class="check-btn" id="check">
+      Check Order
+      <i class="fas fa-paper-plane"></i>
+    </button>
+    <button onClick="window.location.reload();" id="try-again">Try Again</button>
+
+    <script src="script.js"></script>
+  </body>
+</html>
